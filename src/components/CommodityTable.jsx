@@ -164,7 +164,7 @@ const CommodityTable = ({ title, items }) => {
             textAlign: "center",
           }}
         >
-          BID
+          BUY AED
         </Typography>
 
         <Typography
@@ -180,14 +180,14 @@ const CommodityTable = ({ title, items }) => {
             textAlign: "center",
           }}
         >
-          ASK
+          SELL AED{" "}
         </Typography>
       </Box>
 
       <Box
         sx={{
           mt: "1vw",
-          maxHeight: { xs: "auto", sm: "18vw" },
+          maxHeight: { xs: "auto", sm: "20vw" },
         }}
       >
         {rows.length === 0 ? (
@@ -204,7 +204,7 @@ const CommodityTable = ({ title, items }) => {
         ) : (
           <Swiper
             direction="vertical"
-            slidesPerView={4}
+            slidesPerView={5}
             loop={true}
             modules={[Autoplay]} // 👈 Register it here
             autoplay={{
@@ -214,7 +214,7 @@ const CommodityTable = ({ title, items }) => {
             speed={3000} // 👈 higher = smoother slow scroll
             // allowTouchMove={false} // important for TV
             style={{
-              height: isMobile ? "35vw" : "18vw",
+              height: isMobile ? "35vw" : "20vw",
 
               backdropFilter: "blur(5px)",
               background: "#aa8a4b1a",

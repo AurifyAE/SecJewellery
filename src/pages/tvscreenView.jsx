@@ -279,8 +279,8 @@ function TvScreen() {
         {/* Side: SpotRate & Date Time */}
         <Grid xs={12} md={6} padding="1vw" gap="1vw" display="grid">
           <WorldClockHorizontal />
-          <SystemClock />
           <SpotRate />
+          <SystemClock />
         </Grid>
 
         <Grid

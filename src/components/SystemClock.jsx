@@ -58,7 +58,6 @@ const SystemClock = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1vw",
-          mb: "1vw",
           width: "100%",
           padding: "0vw 2.5vw",
           borderRadius: "20px",

@@ -66,6 +66,7 @@ const WorldClockHorizontal = () => {
         gap: "1vw",
         padding: "0vw 2vw",
         // backdropFilter: "blur(2px)",
+        mb: "1vw",
 
         width: "100%",
       }}

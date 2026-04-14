@@ -12,7 +12,6 @@ const SystemClock = () => {
     const updateTime = () => {
       const now = new Date();
 
-      
       const dayStr = now
         .toLocaleDateString("en-GB", { weekday: "long" })
         .toUpperCase();

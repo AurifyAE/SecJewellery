@@ -273,14 +273,14 @@ function TvScreen() {
           </Box>
 
           <CommodityTable items={commodities} />
-          <PoweredByAurify />
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
         <Grid xs={12} md={6} padding="1vw" gap="1vw" display="grid">
           <WorldClockHorizontal />
-          <SpotRate />
           <SystemClock />
+          <SpotRate />
+          <PoweredByAurify />
         </Grid>
 
         <Grid

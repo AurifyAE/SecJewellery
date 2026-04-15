@@ -43,7 +43,7 @@ const NewsTicker = ({ newsItems = [] }) => {
           flexShrink: 0,
         }}
       >
-        Sec Bullion Updates{" "}
+        Sec Jewellery LLC
       </Typography>
 
       {/* SCROLL AREA */}

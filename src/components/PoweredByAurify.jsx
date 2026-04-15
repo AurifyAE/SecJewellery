@@ -23,7 +23,7 @@ const PoweredByAurify = () => {
         target="_blank"
         rel="noopener noreferrer"
         sx={{
-          fontSize: { xs: "15px", md: "1.2vw" },
+          fontSize: { xs: "15px", md: ".8vw" },
 
           fontWeight: 500,
           color: "#fff",
@@ -40,7 +40,7 @@ const PoweredByAurify = () => {
           src={AurifyLogo}
           alt="Aurify"
           sx={{
-            height: { xs: "5vw", md: "1.6vw" },
+            height: { xs: "5vw", md: "1vw" },
             objectFit: "contain",
           }}
         />

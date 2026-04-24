@@ -17,6 +17,7 @@ import WorldClockHorizontal from "../components/WorldClock";
 import SystemClock from "../components/SystemClock";
 import GoldChart from "../components/GoldChart";
 import PoweredByAurify from "../components/PoweredByAurify";
+import BarSlider from "../components/BarSlider";
 
 function TvScreen() {
   const [showLimitModal, setShowLimitModal] = useState(false);
@@ -274,18 +275,20 @@ function TvScreen() {
           flexDirection="column"
           justifyContent="spaceBetween"
           padding="1vw"
+          gap="1vw"
         >
           <Box
             sx={{
               height: "auto",
               width: { xs: "40vw", sm: "20vw" },
-              marginBottom: { xs: "20px", sm: "2vw" },
+              marginBottom: { xs: "20px", sm: "0vw" },
             }}
           >
             <img src={mainLogo} alt="" className="object-contain w-full" />
           </Box>
 
           <CommodityTable items={commodities} />
+          <BarSlider />
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
@@ -301,7 +304,7 @@ function TvScreen() {
           sx={{
             mt: { xs: "20px", md: "0" },
             position: { xs: "unset", md: "fixed" },
-
+            zIndex: "1",
             bottom: "0",
             width: "100%",
             left: "0",

@@ -31,6 +31,7 @@ const PoweredByAurify = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "0.5vw",
+          whiteSpace: "nowrap",
           letterSpacing: "0.05em",
         }}
       >

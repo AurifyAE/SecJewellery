@@ -3,8 +3,6 @@ import { Grid, Paper, Typography, Box, useMediaQuery } from "@mui/material";
 import SpotRate from "../components/SpotRate";
 import CommodityTable from "../components/CommodityTable";
 import NewsTicker from "../components/News";
-// import backgroundImage from "/images/background.svg";
-import backgroundImage from "/images/background.png";
 
 import {
   fetchSpotRates,
@@ -19,6 +17,7 @@ import WorldClockHorizontal from "../components/WorldClock";
 import SystemClock from "../components/SystemClock";
 import GoldChart from "../components/GoldChart";
 import PoweredByAurify from "../components/PoweredByAurify";
+import BarSlider from "../components/BarSlider";
 
 function TvScreen() {
   const [showLimitModal, setShowLimitModal] = useState(false);
@@ -227,12 +226,27 @@ function TvScreen() {
       >
         <Box
           component="img"
-          src="/images/background.png"
+          src="/images/background1.png"
           alt="background"
           sx={{
             height: "100%",
             width: "100%",
             objectFit: "cover",
+          }}
+        />
+        <Box
+          component="img"
+          src="/images/lines.svg"
+          alt="background"
+          sx={{
+            height: "80%",
+            width: "80%",
+            objectFit: "contain",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "1",
           }}
         />
       </Box>
@@ -261,18 +275,20 @@ function TvScreen() {
           flexDirection="column"
           justifyContent="spaceBetween"
           padding="1vw"
+          gap="1vw"
         >
           <Box
             sx={{
               height: "auto",
               width: { xs: "40vw", sm: "20vw" },
-              marginBottom: { xs: "20px", sm: "2vw" },
+              marginBottom: { xs: "20px", sm: "0vw" },
             }}
           >
             <img src={mainLogo} alt="" className="object-contain w-full" />
           </Box>
 
           <CommodityTable items={commodities} />
+          <BarSlider />
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
@@ -288,7 +304,7 @@ function TvScreen() {
           sx={{
             mt: { xs: "20px", md: "0" },
             position: { xs: "unset", md: "fixed" },
-
+            zIndex: "1",
             bottom: "0",
             width: "100%",
             left: "0",

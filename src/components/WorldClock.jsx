@@ -66,7 +66,6 @@ const WorldClockHorizontal = () => {
         gap: "1vw",
         padding: "0vw 2vw",
         // backdropFilter: "blur(2px)",
-        mb: "1vw",
 
         width: "100%",
       }}
@@ -101,7 +100,9 @@ const WorldClockHorizontal = () => {
           </Box>
           <Box
             sx={{
-              textAlign: "center",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
             }}
           >
             <Typography
@@ -112,6 +113,8 @@ const WorldClockHorizontal = () => {
                 },
                 fontWeight: 500,
                 color: "#fff",
+                backdropFilter: "blur(0.3vw)",
+
               }}
             >
               {clock.label}
@@ -124,6 +127,8 @@ const WorldClockHorizontal = () => {
                   lg: "1vw",
                 },
                 color: "#fff",
+                backdropFilter: "blur(0.3vw)",
+
               }}
             >
               {times[clock.key] || "--:-- AM"}

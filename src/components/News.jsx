@@ -17,16 +17,17 @@ const NewsTicker = ({ newsItems = [] }) => {
         },
         display: "flex",
         alignItems: "center",
-        background: "#bfae9d42",
         overflow: "hidden",
         backdropFilter: "blur(0.3vw)",
+        borderTop: "0.1vw solid #eee2d73d",
+
       }}
     >
       {/* LEFT BRAND */}
       <Typography
         sx={{
           color: "#fff",
-          background: "#2C2117",
+          background: "#AB8846",
           fontSize: {
             xs: "12px",
             lg: "1.2vw",

@@ -61,7 +61,6 @@ const SystemClock = () => {
           width: "100%",
           padding: "0vw 2.5vw",
           borderRadius: "20px",
-          backdropFilter: "blur(2px)",
         }}
       >
         {/* Date */}

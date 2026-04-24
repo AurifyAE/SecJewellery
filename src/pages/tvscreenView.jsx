@@ -3,8 +3,6 @@ import { Grid, Paper, Typography, Box, useMediaQuery } from "@mui/material";
 import SpotRate from "../components/SpotRate";
 import CommodityTable from "../components/CommodityTable";
 import NewsTicker from "../components/News";
-// import backgroundImage from "/images/background.svg";
-import backgroundImage from "/images/background.png";
 
 import {
   fetchSpotRates,
@@ -227,12 +225,27 @@ function TvScreen() {
       >
         <Box
           component="img"
-          src="/images/background.png"
+          src="/images/background1.png"
           alt="background"
           sx={{
             height: "100%",
             width: "100%",
             objectFit: "cover",
+          }}
+        />
+        <Box
+          component="img"
+          src="/images/lines.svg"
+          alt="background"
+          sx={{
+            height: "80%",
+            width: "80%",
+            objectFit: "contain",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "1",
           }}
         />
       </Box>

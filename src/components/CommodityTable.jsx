@@ -113,9 +113,13 @@ const CommodityTable = ({ title, items }) => {
           px: "1.5vw",
           alignItems: "end",
           borderRadius: "1vw",
-          background: "#aa8a4b1a",
+          // background: "#aa8a4b1a",
+          background: "#aa8a4b11",
+
           backdropFilter: "blur(0.3vw)",
-          border: "0.1vw solid #ad8b6b73",
+          border: "0.1vw solid #eee2d73d",
+          boxShadow: '0px 0px 25px rgba(170, 136, 69, 0.25) inset',
+
           margin: ".4vw",
         }}
       >
@@ -217,9 +221,10 @@ const CommodityTable = ({ title, items }) => {
               height: isMobile ? "35vw" : "20vw",
 
               backdropFilter: "blur(5px)",
-              background: "#aa8a4b1a",
+              background: "#aa8a4b15",
               borderRadius: "1vw",
-              border: "0.1vw solid #ad8b6b73",
+              border: "0.1vw solid #eee2d73d",
+              boxShadow: '0px 0px 25px rgba(170, 136, 69, 0.25) inset',
               margin: ".4vw",
             }}
           >
